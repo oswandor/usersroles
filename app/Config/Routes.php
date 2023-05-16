@@ -36,7 +36,7 @@ $routes->get('users/(:num)', 'Usersroles::show/$1'); // Ruta para obtener un usu
 $routes->get('users/new', 'Usersroles::new');
 $routes->post('users', 'Usersroles::create'); // Ruta para crear un nuevo usuario
 $routes->put('users/(:num)', 'Usersroles::update/$1'); // Ruta para actualizar un usuario existente por ID
-$routes->delete('users/(:num)', 'Usersroles::delete/$1'); // Ruta para eliminar un usuario por ID
+$routes->get('users/(:num)', 'Usersroles::delete/$1'); // Ruta para eliminar un usuario por ID
 
 
 /*

@@ -24,26 +24,26 @@ CREATE TABLE Asignacion_Rol (
 
 
 
-INSERT INTO Usuario (id_usuario, nombre, contraseña)
-VALUES (1, 'Usuario1', 'contraseña1');
+INSERT INTO Usuario (nombre, contraseña)
+VALUES ('Usuario1', 'contraseña1');
 
-INSERT INTO Usuario (id_usuario, nombre, contraseña)
-VALUES (2, 'Usuario2', 'contraseña2');
-
-
-
-INSERT INTO Rol (id_rol, nombre)
-VALUES (1, 'Administrador');
-
-INSERT INTO Rol (id_rol, nombre)
-VALUES (2, 'Desarrollador');
+INSERT INTO Usuario (nombre, contraseña)
+VALUES ('Usuario2', 'contraseña2');
 
 
-INSERT INTO Asignacion_Rol (id_asignacion, id_usuario, id_rol)
-VALUES (1, 1, 1); -- Asignar el rol de Administrador al Usuario1
 
-INSERT INTO Asignacion_Rol (id_asignacion, id_usuario, id_rol)
-VALUES (2, 2, 2); -- Asignar el rol de Desarrollador al Usuario2
+INSERT INTO Rol (nombre)
+VALUES ('Administrador');
+
+INSERT INTO Rol (nombre)
+VALUES ('Desarrollador');
+
+
+INSERT INTO Asignacion_Rol (id_usuario, id_rol)
+VALUES (1, 1); -- Asignar el rol de Administrador al Usuario1
+
+INSERT INTO Asignacion_Rol (id_usuario, id_rol)
+VALUES (2, 2); -- Asignar el rol de Desarrollador al Usuario2
 
 
 

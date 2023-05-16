@@ -82,7 +82,6 @@
                         <td><?= $usuario['contraseña']; ?></td>
                         <!-- Mostrar más información si es necesario -->
                         <td><a href="<?php echo base_url('delete/'.$usuario['id_usuario']);?>" class="btn btn-danger btn-sm">Delete</a></td>
-
                     </tr>
                    
             
